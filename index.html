@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Suganthi Rajamuthu — Software Development, AI/ML and Data Engineering portfolio">
+  <title>Suganthi Rajamuthu | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#090909",
+            panel: "#151515",
+            orange: "#ff7900",
+            amberlight: "#ffb36b"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { scroll-behavior: smooth; }
+    body { font-family: Inter, sans-serif; }
+    .accent {
+      background: linear-gradient(90deg,#ff7900,#ffc18b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .grid-bg {
+      background-image:
+        linear-gradient(#ff790009 1px,transparent 1px),
+        linear-gradient(90deg,#ff790009 1px,transparent 1px);
+      background-size: 35px 35px;
+    }
+    .card { transition: .25s ease; }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #ff790080;
+      box-shadow: 0 12px 35px #0005;
+    }
+    .tag {
+      border: 1px solid #ffffff18;
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 12px;
+      color: #d4d4d4;
+    }
+    .cert, .social {
+      border: 1px solid #ffffff18;
+      border-radius: 14px;
+      transition: .2s;
+    }
+    .cert:hover, .social:hover {
+      border-color: #ff7900;
+      color: #ff9a40;
+    }
+    .section-label {
+      color: #ff7900;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body class="bg-ink text-white antialiased">
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+      <a href="#home" class="text-2xl font-extrabold">S<span class="text-orange">.</span>R</a>
+      <button id="menuBtn" class="rounded-lg border border-white/20 px-3 py-2 md:hidden"
+        aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      <div class="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
+        <a class="hover:text-orange" href="#about">About</a>
+        <a class="hover:text-orange" href="#skills">Skills</a>
+        <a class="hover:text-orange" href="#projects">Projects</a>
+        <a class="hover:text-orange" href="#experience">Experience</a>
+        <a class="hover:text-orange" href="#certifications">Certificates</a>
+        <a class="rounded-full bg-orange px-4 py-2 font-bold text-black" href="#contact">Contact ↗</a>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-white/10 px-5 py-4 md:hidden">
+      <div class="flex flex-col gap-4 text-sm text-zinc-300">
+        <a href="#about">About</a><a href="#skills">Skills</a>
+        <a href="#projects">Projects</a><a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="grid-bg relative overflow-hidden">
+      <div class="absolute -left-32 top-10 h-80 w-80 rounded-full bg-orange/10 blur-3xl"></div>
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:py-28 lg:grid-cols-[1.2fr_.8fr]">
+        <div>
+          <p class="section-label mb-5">Portfolio · 2026</p>
+          <h1 class="text-5xl font-extrabold leading-tight sm:text-6xl lg:text-7xl">
+            Hi, I'm <span class="accent">Suganthi.</span>
+          </h1>
+          <h2 class="mt-5 text-xl font-semibold leading-relaxed text-zinc-200 sm:text-2xl">
+            Aspiring Software Developer
+            <span class="text-orange">|</span> AI/ML Enthusiast
+            <span class="text-orange">|</span> Data Engineering 
+          </h2>
+          <p class="mt-6 max-w-xl leading-8 text-zinc-400">
+            I am an enthusiastic learner with a strong interest in software
+            development, emerging technologies, artificial intelligence, and
+            prompt engineering. I enjoy building practical projects and
+            continuously improving my skills. I believe curiosity, consistent
+            effort, and hard work help turn ideas into meaningful results.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#projects" class="rounded-full bg-orange px-6 py-3 font-bold text-black hover:bg-amberlight">Explore my work ↗</a>
+            <a href="https://drive.google.com/file/d/1_tEPTUH1fX71DFz0IDfYDyw1_7otX1Ca/view?usp=sharing"
+              target="_blank" rel="noopener noreferrer"
+              class="rounded-full border border-white/20 px-6 py-3 hover:border-orange">View resume ↗</a>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4 text-sm text-zinc-400">
+            <span>⌖ Madurai, Tamil Nadu</span>
+            <span>🎓 B.E. CSE · 2023–2027</span>
+            <span>CGPA 8.51/10</span>
+          </div>
+        </div>
+
+        <!-- PHOTO: place me.jpeg beside index.html -->
+        <div class="mx-auto w-full max-w-sm">
+          <div class="rounded-[2rem] border border-orange/40 bg-orange/5 p-3 shadow-2xl shadow-orange/10">
+            <div class="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl bg-panel">
+              <img id="profilePhoto" src="me.jpeg" alt="Suganthi Rajamuthu"
+                class="absolute inset-0 h-full w-full object-cover"
+                onerror="this.style.display='none';document.getElementById('photoFallback').classList.remove('hidden')">
+              <div id="photoFallback" class="hidden flex-col items-center px-6 text-center">
+                <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full border border-orange/50 bg-orange/10 text-4xl text-orange">+</div>
+                <p class="text-lg font-bold">Your photo goes here</p>
+                <p class="mt-2 text-sm leading-6 text-zinc-500">
+                  Save your picture as <span class="text-orange">me.jpeg</span>
+                  in the same folder as index.html.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4 text-center text-xs text-zinc-500">Software · AI/ML · Data</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="border-t border-white/5 bg-[#0e0e0e]">
+      <div class="mx-auto grid max-w-7xl gap-8 px-5 py-20 lg:grid-cols-[.7fr_1.3fr]">
+        <div>
+          <p class="section-label">01 / About me</p>
+          <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl">A learner who loves <span class="accent">building.</span></h2>
+        </div>
+        <div class="text-zinc-400 leading-8">
+          <p>
+            I am a Computer Science and Engineering student at Thiagarajar
+            College of Engineering. I enjoy exploring new technologies and
+            working with software development, AI/ML, data engineering, and
+            prompt engineering.
+          </p>
+          <p class="mt-4">
+            Through academic and personal projects, I have explored web
+            applications, recommendation systems, databases, and study and
+            task-management tools. I value teamwork, persistence, and
+            continuous learning, and I am always looking for opportunities
+            to strengthen my technical skills.
+          </p>
+          <div class="mt-7 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-panel p-5">
+              <p class="text-3xl font-extrabold text-orange">8.51</p>
+              <p class="mt-2 text-sm text-zinc-500">CGPA / 10</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-panel p-5">
+              <p class="text-3xl font-extrabold text-orange">5</p>
+              <p class="mt-2 text-sm text-zinc-500">Featured projects</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-panel p-5">
+              <p class="text-3xl font-extrabold text-orange">2</p>
+              <p class="mt-2 text-sm text-zinc-500">Internships</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mx-auto max-w-7xl px-5 py-20">
+      <p class="section-label">02 / Technical skills</p>
+      <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl">My technical <span class="accent">toolkit.</span></h2>
+      <p class="mt-4 max-w-2xl leading-7 text-zinc-400">Technologies and concepts I have studied and used in my work.</p>
+      <div class="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="card rounded-2xl border border-white/10 bg-panel p-6">
+          <h3 class="font-bold text-orange">Programming & CS</h3>
+          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">C</span><span class="tag">OOP</span><span class="tag">DBMS</span></div>
+        </div>
+        <div class="card rounded-2xl border border-white/10 bg-panel p-6">
+          <h3 class="font-bold text-orange">Web & Backend</h3>
+          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React.js</span><span class="tag">Flask</span><span class="tag">Django</span><span class="tag">JDBC</span><span class="tag">Firebase</span></div>
+        </div>
+        <div class="card rounded-2xl border border-white/10 bg-panel p-6">
+          <h3 class="font-bold text-orange">Tools & Platforms</h3>
+          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Spyder</span><span class="tag">Windows</span><span class="tag">Linux</span></div>
+        </div>
+        <div class="card rounded-2xl border border-white/10 bg-panel p-6">
+          <h3 class="font-bold text-orange">Deployment & DevOps</h3>
+          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">Vercel</span><span class="tag">Netlify</span><span class="tag">Render</span></div>
+        </div>
+        <div class="card rounded-2xl border border-white/10 bg-panel p-6">
+          <h3 class="font-bold text-orange">Data & Visualization</h3>
+          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Power BI</span><span class="tag">Machine Learning</span><span class="tag">NLP</span></div>
+        </div>
+        <div class="card rounded-2xl border border-white/10 bg-panel p-6">
+          <h3 class="font-bold text-orange">Areas of interest</h3>
+          <div class="mt-4 flex flex-wrap gap-2"><span class="tag">Full Stack Development</span><span class="tag">AI/ML</span><span class="tag">Prompt Engineering</span><span class="tag">Data Engineering</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="border-y border-white/5 bg-[#0e0e0e]">
+      <div class="mx-auto max-w-7xl px-5 py-20">
+        <p class="section-label">03 / Selected projects</p>
+        <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl">Things I've <span class="accent">built.</span></h2>
+        <p class="mt-4 max-w-2xl leading-7 text-zinc-400">A selection of academic and personal projects. Live links are provided where available.</p>
+
+        <div class="mt-9 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <article class="card flex flex-col rounded-2xl border border-white/10 bg-panel p-6">
+            <p class="text-xs font-bold uppercase tracking-wider text-orange">Final-year team project</p>
+            <h3 class="mt-4 text-xl font-bold">Yoga Recommendation System</h3>
+            <p class="mt-3 flex-1 text-sm leading-7 text-zinc-400">
+              Recommends suitable yoga asanas based on reported symptoms and
+              supports Tamil and English input using NLP and machine learning.
+            </p>
+            <p class="mt-4 text-xs leading-6 text-zinc-500">Python · Machine Learning · NLP · Flask · Streamlit</p>
+            <span class="mt-5 text-sm text-zinc-500">June 2025 – June 2026</span>
+          </article>
+
+          <article class="card flex flex-col rounded-2xl border border-white/10 bg-panel p-6">
+            <p class="text-xs font-bold uppercase tracking-wider text-orange">Independent project</p>
+            <h3 class="mt-4 text-xl font-bold">Course Recommendation System</h3>
+            <p class="mt-3 flex-1 text-sm leading-7 text-zinc-400">
+              Provides personalized course recommendations based on user
+              interests and preferences using TF-IDF and cosine similarity.
+            </p>
+            <p class="mt-4 text-xs leading-6 text-zinc-500">Python · Flask · ML · NLP · TF-IDF · Cosine Similarity · HTML · CSS</p>
+            <a class="mt-5 font-semibold text-orange hover:text-amberlight" href="https://courserecommendersystems.netlify.app/" target="_blank" rel="noopener noreferrer">Live project ↗</a>
+          </article>
+
+          <article class="card flex flex-col rounded-2xl border border-white/10 bg-panel p-6">
+            <p class="text-xs font-bold uppercase tracking-wider text-orange">Team project</p>
+            <h3 class="mt-4 text-xl font-bold">Complaint Management System</h3>
+            <p class="mt-3 flex-1 text-sm leading-7 text-zinc-400">
+              Allows users to register and track complaints while administrators
+              update complaint statuses and monitor their progress.
+            </p>
+            <p class="mt-4 text-xs leading-6 text-zinc-500">Java · JDBC · Oracle XE · HTML · CSS · JavaScript</p>
+            <span class="mt-5 text-sm text-zinc-500">April 2026</span>
+          </article>
+
+          <article class="card flex flex-col rounded-2xl border border-white/10 bg-panel p-6">
+            <p class="text-xs font-bold uppercase tracking-wider text-orange">Personal project</p>
+            <h3 class="mt-4 text-xl font-bold">Task Management System</h3>
+            <p class="mt-3 flex-1 text-sm leading-7 text-zinc-400">
+              A task-management application built with a Firebase backend.
+            </p>
+            <p class="mt-4 text-xs leading-6 text-zinc-500">Firebase · Web application · Vercel</p>
+            <a class="mt-5 font-semibold text-orange hover:text-amberlight" href="https://taskmanager-firebase.vercel.app/" target="_blank" rel="noopener noreferrer">Live project ↗</a>
+          </article>
+
+          <article class="card flex flex-col rounded-2xl border border-white/10 bg-panel p-6">
+            <p class="text-xs font-bold uppercase tracking-wider text-orange">Personal project</p>
+            <h3 class="mt-4 text-xl font-bold">Study Flow</h3>
+            <p class="mt-3 flex-1 text-sm leading-7 text-zinc-400">
+              Create multiple study lists, add questions, tick completed items,
+              and delete items that are no longer needed.
+            </p>
+            <p class="mt-4 text-xs leading-6 text-zinc-500">Study planning · Question lists · Checkboxes</p>
+            <a class="mt-5 font-semibold text-orange hover:text-amberlight" href="https://study-flow-navy.vercel.app/" target="_blank" rel="noopener noreferrer">Live project ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="mx-auto max-w-7xl px-5 py-20">
+      <p class="section-label">04 / Professional experience</p>
+      <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl">Learning through <span class="accent">experience.</span></h2>
+      <div class="mt-9 grid gap-5 lg:grid-cols-2">
+        <article class="card rounded-2xl border border-white/10 bg-panel p-6 sm:p-8">
+          <p class="text-sm text-orange">July 2024 – August 2024</p>
+          <h3 class="mt-3 text-xl font-bold">Web Developer Intern</h3>
+          <p class="mt-1 text-zinc-400">Futurik Technologies · Madurai</p>
+          <ul class="mt-5 list-disc space-y-2 pl-5 text-sm leading-7 text-zinc-400">
+            <li>Worked on web development tasks and responsive interfaces.</li>
+            <li>Developed web applications using HTML, CSS, JavaScript, and React.js.</li>
+            <li>Created a website for the internship company.</li>
+          </ul>
+        </article>
+        <article class="card rounded-2xl border border-white/10 bg-panel p-6 sm:p-8">
+          <p class="text-sm text-orange">June 2025</p>
+          <h3 class="mt-3 text-xl font-bold">AI/ML Intern</h3>
+          <p class="mt-1 text-zinc-400">Elysium Technologies · Madurai</p>
+          <ul class="mt-5 list-disc space-y-2 pl-5 text-sm leading-7 text-zinc-400">
+            <li>Performed data cleaning and preprocessing.</li>
+            <li>Conducted exploratory data analysis (EDA).</li>
+            <li>Worked on model training and evaluation.</li>
+            <li>Developed a sentiment analysis project using Python and NLP.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="border-y border-white/5 bg-[#0e0e0e]">
+      <div class="mx-auto grid max-w-7xl gap-7 px-5 py-16 md:grid-cols-[.7fr_1.3fr]">
+        <div><p class="section-label">05 / Education</p><h2 class="mt-4 text-3xl font-extrabold">My academic <span class="accent">foundation.</span></h2></div>
+        <div class="rounded-2xl border border-white/10 bg-panel p-6 sm:p-8">
+          <p class="text-sm font-bold text-orange">2023–2027</p>
+          <h3 class="mt-3 text-xl font-bold">Bachelor of Engineering (B.E.)</h3>
+          <p class="mt-2 text-zinc-300">Computer Science and Engineering</p>
+          <p class="mt-2 text-sm text-zinc-500">Thiagarajar College of Engineering · Madurai, Tamil Nadu</p>
+          <p class="mt-5 inline-flex rounded-lg border border-orange/30 px-4 py-3">CGPA: <strong class="ml-2 text-orange">8.51 / 10</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="mx-auto max-w-7xl px-5 py-20">
+      <p class="section-label">06 / Certifications & badges</p>
+      <h2 class="mt-4 text-3xl font-extrabold sm:text-4xl">Always <span class="accent">learning.</span></h2>
+      <p class="mt-4 text-zinc-400">Select a credential to open its certificate or badge.</p>
+      <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <a class="cert flex gap-3 p-4" href="https://coursera.org/share/6ea5aebc94960deb970dd35cee7fe418" target="_blank" rel="noopener noreferrer"><span class="text-orange">↗</span><span><strong class="text-sm">Python for Data Science, AI & Development</strong><small class="mt-1 block text-xs text-zinc-500">Coursera</small></span></a>
+        <a class="cert flex gap-3 p-4" href="https://coursera.org/share/119036f39e41ea05c70e50fa24334a45" target="_blank" rel="noopener noreferrer"><span class="text-orange">↗</span><span><strong class="text-sm">Introduction to DevOps</strong><small class="mt-1 block text-xs text-zinc-500">Coursera</small></span></a>
+        <a class="cert flex gap-3 p-4" href="https://coursera.org/share/3566cb06a82560c45e8f9cd2c544a361" target="_blank" rel="noopener noreferrer"><span class="text-orange">↗</span><span><strong class="text-sm">Introduction to Mobile Development</strong><small class="mt-1 block text-xs text-zinc-500">Coursera</small></span></a>
+        <a class="cert flex gap-3 p-4" href="https://coursera.org/share/bbdb07302b98603a5ac273529a596b99" target="_blank" rel="noopener noreferrer"><span class="text-orange">↗</span><span><strong class="text-sm">Computer Networks and Network Security</strong><small class="mt-1 block text-xs text-zinc-500">Coursera</small></span></a>
+        <a class="cert flex gap-3 p-4" href="https://coursera.org/share/2bbe20de2b70abba78a954b7eccd13ea" target="_blank" rel="noopener noreferrer"><span class="text-orange">↗</span><span><strong class="text-sm">React Basics</strong><small class="mt-1 block text-xs text-zinc-500">Coursera</small></span></a>
+        <a class="cert flex gap-3 p-4" href="https://coursera.org/share/886a76bba5394f2752b5406a049dee1d" target="_blank" rel="noopener noreferrer"><span class="text-orange">↗</span><span><strong class="text-sm">Database for Backend Development</strong><small class="mt-1 block text-xs text-zinc-500">Coursera</small></span></a>
+        <a class="cert flex gap-3 p-4" href="https://www.credly.com/badges/12ca0ebf-7d98-40fc-affb-d201debf7251/public_url" target="_blank" rel="noopener noreferrer"><span class="text-orange">↗</span><span><strong class="text-sm">AWS Data Engineering Badge</strong><small class="mt-1 block text-xs text-zinc-500">Credly</small></span></a>
+        <div class="cert flex gap-3 p-4"><span class="text-orange">✦</span><span><strong class="text-sm">Prompt Engineering</strong><small class="mt-1 block text-xs text-zinc-500">SoloLearn · certificate link not provided</small></span></div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="border-y border-white/5 bg-[#0e0e0e]">
+      <div class="mx-auto max-w-7xl px-5 py-16">
+        <p class="section-label">07 / Activities & leadership</p>
+        <h2 class="mt-4 text-3xl font-extrabold">Beyond the <span class="accent">classroom.</span></h2>
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <article class="card rounded-2xl border border-white/10 bg-panel p-6">
+            <p class="text-xs font-bold text-orange">VOLUNTEERING</p>
+            <h3 class="mt-3 text-lg font-bold">Rotaract Club</h3>
+            <p class="mt-2 text-sm leading-6 text-zinc-400">Social-service volunteer.</p>
+          </article>
+          <article class="card rounded-2xl border border-white/10 bg-panel p-6">
+            <p class="text-xs font-bold text-orange">LEADERSHIP</p>
+            <h3 class="mt-3 text-lg font-bold">Final-Year Project Team Lead</h3>
+            <p class="mt-2 text-sm leading-6 text-zinc-400">Team leadership for the final-year project.</p>
+          </article>
+          <article class="card rounded-2xl border border-white/10 bg-panel p-6">
+            <p class="text-xs font-bold text-orange">PARTICIPATION</p>
+            <h3 class="mt-3 text-lg font-bold">TCE Festival · 2024 & 2025</h3>
+            <p class="mt-2 text-sm leading-6 text-zinc-400">Task Management System (2024) and Word Game (2025).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-orange/10 via-transparent to-transparent"></div>
+      <div class="relative mx-auto max-w-5xl px-5 py-20 text-center">
+        <p class="section-label">08 / Contact</p>
+        <h2 class="mt-4 text-4xl font-extrabold sm:text-5xl">Let's build something <span class="accent">useful.</span></h2>
+        <p class="mx-auto mt-5 max-w-xl leading-7 text-zinc-400">I'm interested in learning, collaborating, and exploring opportunities in software development and AI-related work.</p>
+        <a href="mailto:suganthirosi.r@gmail.com" class="mt-8 inline-block rounded-full bg-orange px-7 py-3 font-bold text-black hover:bg-amberlight">Email me ↗</a>
+        <div class="mt-7 flex flex-wrap justify-center gap-3 text-sm">
+          <a class="social px-4 py-3" href="https://github.com/suganthiroslin" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="social px-4 py-3" href="https://www.linkedin.com/in/suganthi-rajamuthu-1b9247305" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="social px-4 py-3" href="https://drive.google.com/file/d/1_tEPTUH1fX71DFz0IDfYDyw1_7otX1Ca/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+        </div>
+        <p class="mt-5 text-sm text-zinc-500">Madurai, Tamil Nadu, India · <a class="hover:text-orange" href="tel:+918438980065">+91 84389 80065</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 px-5 py-6 text-center text-xs text-zinc-600">
+    © <span id="year"></span> Suganthi Rajamuthu · 
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      const hidden = mobileMenu.classList.toggle("hidden");
+      menuBtn.setAttribute("aria-expanded", String(!hidden));
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
